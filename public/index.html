@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Arquivos</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <h1>Conversor de Arquivos</h1>
+    <p>Converta entre PDF, Word, e outros formatos!</p>
+</header>
+
+<main>
+    <form id="file-converter-form">
+        <div class="form-group">
+            <label for="file-input">Escolha o arquivo:</label>
+            <input type="file" id="file-input" name="file-input" accept=".pdf, .doc, .docx">
+        </div>
+
+        <div class="form-group">
+            <label for="convert-to">Converter para:</label>
+            <select id="convert-to" name="convert-to">
+                <option value="pdf">PDF</option>
+                <option value="docx">Word (DOCX)</option>
+            </select>
+        </div>
+
+        <button type="submit">Converter</button>
+    </form>
+
+    <div class="status" id="status"></div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/convertapi-js@latest/lib/convertapi.js"></script>
+<script type="module" src="script.js"></script>
+</body>
+</html>

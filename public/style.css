@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #000000;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background: #712d91;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  main {
+    margin: 2rem auto;
+    max-width: 600px;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  input[type="file"],
+  select,
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button {
+    background-color: #712d91;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+  }
+  button:hover {
+    background-color: #712d91;
+  }
+  .status {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .status a {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #712d91;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  .status a:hover {
+    background: #45a049;
+  }
+  .loading-spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #712d91;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .message {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  .error {
+    color: red;
+    font-weight: bold;
+  }
